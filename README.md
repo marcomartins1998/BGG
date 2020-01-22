@@ -5,7 +5,7 @@ De seguida tento explicar a função de vários módulos que compõem este proje
 ## MainActivity:
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/MainActivity.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/MainActivity.png"/>
 </p>
 
 Esta _activity_ contém o _setup_ de todos os botões associados às pesquisas de jogos e de _features_ especiais solicitas no enunciado, sendo estas:
@@ -21,7 +21,7 @@ Cada um dos primeiros 3 botões tem a ele associado um setOnClickListener que, q
 ## GameListActivity:
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/GameListActivity.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/GameListActivity.png"/>
 </p>
  
 Esta _activity_ está encarregada de fazer um pedido _GET_ a um _URL_ que lhe foi passado pelo _intent_ e demonstrar os jogos que vêem na resposta no seu _RecyclerView_, utilizamos um _ViewModel_ (_GamesViewModel_) para evitar pedidos _HTTP_ consecutivos à _API_ quando o utilizador roda o ecrã, foi também utilizada a tecnologia _LiveData_ dentro do _ViewModel_ para que, caso o utilizador entre na _activity_ e rode o ecrã, criando uma nova _activity_, antes que o pedido esteja concluído, a nova _activity_ possa ser notificada assim que o pedido iniciado na _activity_ anterior concluir através do método _observe()_, evitando mais um pedido desnecessário à _API_.
@@ -33,8 +33,8 @@ Também foi implementado paginação à lista, através da manipulação do _URL
 ## GameDetailsActivity:
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/GameDetailsActivity1.png"/>
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/GameDetailsActivity2.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/GameDetailsActivity1.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/GameDetailsActivity2.png"/>
 </p>
 
 Mostra informação mais detalhada de um jogo. Foi utilizado um _ViewModel_ (_GameViewModel_) e _ViewModelProviderFactory_ (_GameViewModelProviderFactory_) pela mesma razão que foram usados no _GameListActivity_.
@@ -44,7 +44,7 @@ O utilizador pode pressionar a imagem para ser redirecionado para uma página _W
 ## ListManagingActivity:
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/ListManagingActivity.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/ListManagingActivity.png"/>
 </p>
 
 Esta está encarregue da criação e listagem de listas personalizadas de jogos criadas pelo utilizador. Quando o botão de criação de lista é premido este executa uma _AsyncTask_ que por sí vai correr numa _background thread_ uma _query_ de _SQL_ de inserção de _CustomList_. A ação de inserção é impedida caso a caixa de _input_ estiver vazia ou já exista uma _CustomList_ com o nome introduzido.
@@ -55,7 +55,7 @@ Cada elemento da lista tem a sí associado um botão _view_ e _remove_. O botão
 ## FavouriteActivity
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/FavouriteActivity.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/FavouriteActivity.png"/>
 </p>
  
 Esta _activity_ disponibiliza um espaço de criação de listas de favoritos, listas formadas por filtros definidos pelo utilizador, com a inserção do nome da lista e os vários filtros que a compõem e uma listagem de todas as listas de favoritos. Utiliza um _ViewModel_ em junção com _LiveData_ para poder fazer um pedido à base de dados, através de uma _query_ de _SQL_, para aceder a todos os _Favourites_ existentes, cada um deles tem a sí associado um botão de remoção e um botão de pesquisa, ao premir este botão é criada uma _ListFavouriteGamesActivity_ onde são listados todos os jogos que cumprem os filtros da lista de favoritos.
@@ -65,7 +65,7 @@ Existe também um botão que, quando pressionado, cria uma _ModifyUpdatesActivit
 ## ListFavouriteGamesActivity
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/ListFavouriteGamesActivity.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/ListFavouriteGamesActivity.png"/>
 </p>
  
 Tem o objetivo de demonstrar todos os jogos com os filtros associados ao _Favourite_, caso este não tenha jogos associados a sí na base de dados, um pedido _GET_ é feito para receber todos os jogos que se adaptam aos filtros, de seguida estes são armazenados na base de dados. Utiliza um _ViewModel_ em junção com _LiveData_ para que a lista visualizada possa ser preenchida com os jogos resultantes do pedido à base de dados ou do pedido _HTTP_ assim que estes estejam concluídos.
@@ -82,7 +82,7 @@ Também é aqui que a aplicação inicia um _NotificationChannel_, onde as notif
 ## ModifyUpdatesActivity
 
 <p align="center">
-  <img src="https://github.com/marcomartins1998/BGG/screenshots/ModifyUpdatesActivity.png"/>
+  <img src="https://github.com/marcomartins1998/BGG/blob/master/screenshots/ModifyUpdatesActivity.png"/>
 </p>
  
 Uma _activity_ cujo objetivo é alterar as circunstâncias em que a aplicação pode verificar se ocorreram atualizações aos seu _Favourites_. Caso o utilizador imponha novas condições a _WorkRequest_ antiga é eliminada e substituída por uma _WorkRequest_ que impõe essas mesmas condições.
