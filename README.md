@@ -1,5 +1,6 @@
 # BGG
 Este projeto consiste na criação de uma app Android que habilita o utilizador a fazer várias pesquisas e ações sobre jogos de tabuleiros adquiridos através da API da Board Game Atlas.
+De seguida tento explicar a função de vários módulos que compõem este projeto que achei importantes para o entendimento do funcionamento da aplicação.
 
 ## MainActivity:
 
