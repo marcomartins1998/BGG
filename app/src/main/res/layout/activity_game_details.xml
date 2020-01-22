@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/MainWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageURL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/tvNameFix"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/name"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageURL" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginEnd="32dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@id/tvNameFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/tvNameFix"
+                app:layout_constraintTop_toTopOf="@+id/tvNameFix" />
+
+            <TextView
+                android:id="@+id/tvMinPlayersFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/min_players"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvNameFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameFix" />
+
+            <TextView
+                android:id="@+id/tvMinPlayers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMinPlayersFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvName"
+                app:layout_constraintTop_toTopOf="@+id/tvMinPlayersFix" />
+
+            <TextView
+                android:id="@+id/tvMaxPlayersFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/max_players"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvMinPlayersFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvMinPlayersFix" />
+
+            <TextView
+                android:id="@+id/tvMaxPlayers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMaxPlayersFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvMinPlayers"
+                app:layout_constraintTop_toTopOf="@+id/tvMaxPlayersFix" />
+
+            <TextView
+                android:id="@+id/tvMinAgeFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/min_age"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvMaxPlayersFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvMaxPlayersFix" />
+
+            <TextView
+                android:id="@+id/tvMinAge"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tvMinAgeFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvMaxPlayers"
+                app:layout_constraintTop_toTopOf="@+id/tvMinAgeFix" />
+
+            <TextView
+                android:id="@+id/tvDescriptionFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/description"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvMinAgeFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvMinAgeFix" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvMinAge"
+                app:layout_constraintTop_toTopOf="@+id/tvDescriptionFix" />
+
+            <TextView
+                android:id="@+id/tvPrimaryPublisherFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/primary_publisher"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvDescriptionFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
+
+            <TextView
+                android:id="@+id/tvPrimaryPublisher"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPrimaryPublisherFix"
+                app:layout_constraintEnd_toStartOf="@+id/bPrimaryPublisher"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvMinAge"
+                app:layout_constraintTop_toTopOf="@+id/tvPrimaryPublisherFix"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/bPrimaryPublisher"
+                android:layout_width="81dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/button_background"
+                android:text="@string/publisher_button"
+                app:layout_constraintBottom_toBottomOf="@+id/tvPrimaryPublisher"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvPrimaryPublisher" />
+
+            <TextView
+                android:id="@+id/tvDesignersFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/designers"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvPrimaryPublisherFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvPrimaryPublisher" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDesigners"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tvDesignersFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvPrimaryPublisher"
+                app:layout_constraintTop_toTopOf="@+id/tvDesignersFix"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvAverageUserRatingFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/average_user_rating"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintStart_toStartOf="@+id/tvDesignersFix"
+                app:layout_constraintTop_toBottomOf="@+id/rvDesigners" />
+
+            <TextView
+                android:id="@+id/tvAverageUserRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAverageUserRatingFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rvDesigners"
+                app:layout_constraintTop_toTopOf="@+id/tvAverageUserRatingFix"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tvRulesUrlFix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/rules_url"
+                android:textColor="@color/MainDarkBlue"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvAverageUserRatingFix"
+                app:layout_constraintTop_toBottomOf="@+id/tvAverageUserRating" />
+
+            <TextView
+                android:id="@+id/tvRulesUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:autoLink="web"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textColorLink="@color/LinkColor"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRulesUrlFix"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tvAverageUserRating"
+                app:layout_constraintTop_toTopOf="@+id/tvRulesUrlFix"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

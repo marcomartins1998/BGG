@@ -1,0 +1,281 @@
+<resources>
+    <string name="app_name">Board Games Atlas</string>
+    <string name="button_search_by_name">SearchGameByName</string>
+    <string name="button_search_by_popularity">SearchMostPopularGames</string>
+    <string name="button_search_by_company">SearchByCompany</string>
+    <string name="button_search_by_creator">SearchByCreator</string>
+    <string name="button_manage_custom_lists">ManageLists</string>
+    <string name="button_favourite">Favourites</string>
+
+    <string name="game_details">Details</string>
+    <string name="game_add_to_list">AddToList</string>
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+
+    <string name="primary_publisher">Primary publisher</string>
+    <string name="average_user_rating">User rating</string>
+    <string name="max_players">Max players</string>
+    <string name="min_players">Min players</string>
+    <string name="name">Name</string>
+    <string name="designers">Designers</string>
+    <string name="description">Description</string>
+    <string name="rules_url">Rules</string>
+    <string name="min_age">Minimum age</string>
+    <string name="publisher_button">Games</string>
+    <string name="designer_button">Games</string>
+
+    <string name="create_list">Create a new custom list:</string>
+    <string name="button_create_list">Create</string>
+    <string name="new_list_name">Name:</string>
+    <string name="new_list_name_error">Name field needs to be filled.</string>
+    <string name="new_list_name_exists_error">Custom list with name already exists.</string>
+    <string name="custom_lists">Custom lists:</string>
+    <string name="custom_list_view">View</string>
+    <string name="custom_list_remove">Remove</string>
+    <string name="custom_list_add_to">AddTo</string>
+    <string name="custom_list_add_success">Game added to list successfully.</string>
+    <string name="custom_lists_title">Existing custom lists:</string>
+
+    <string name="create_filter">Create Filter</string>
+    <string name="modify_updates">Modify Update Constraints</string>
+    <string name="hint_designers">Designer:</string>
+    <string name="hint_publishers">Publisher:</string>
+    <string name="hint_name_filter">Name:</string>
+    <string name="hint_category">Category:</string>
+    <string name="hint_mechanic">Mechanic:</string>
+
+    <string name="search_favourite">Search</string>
+    <string name="save_favourite_list">Save List</string>
+    <string name="remove_favourite">Remove</string>
+
+    <string-array name="favourite_categories">
+        <item>Categories</item>
+        <item>4x</item>
+        <item>Abstract</item>
+        <item>Adventure</item>
+        <item>Age of Reason</item>
+        <item>Alternate History</item>
+        <item>American West</item>
+        <item>Ancient</item>
+        <item>Animals</item>
+        <item>Apocalyptic</item>
+        <item>Art</item>
+        <item>Aviation</item>
+        <item>Bluffing</item>
+        <item>Campaign</item>
+        <item>Card Game</item>
+        <item>Children\'s Game</item>
+        <item>City Building</item>
+        <item>Civil War</item>
+        <item>Civilization</item>
+        <item>Collectible Components</item>
+        <item>Comic Book / Strip</item>
+        <item>Conversation</item>
+        <item>Cooperative</item>
+        <item>Cyberpunk</item>
+        <item>Deduction</item>
+        <item>Dexterity</item>
+        <item>Dice</item>
+        <item>Dinosaurs</item>
+        <item>Drinking</item>
+        <item>Dungeons &amp; Dragons</item>
+        <item>Economic</item>
+        <item>Educational</item>
+        <item>Electronic</item>
+        <item>Environmental</item>
+        <item>Espionage</item>
+        <item>Eurogame</item>
+        <item>Expansion</item>
+        <item>Exploration</item>
+        <item>Family Game</item>
+        <item>Fan Made</item>
+        <item>Fantasy</item>
+        <item>Farming</item>
+        <item>Fighting</item>
+        <item>Fishing</item>
+        <item>Flicking</item>
+        <item>Food</item>
+        <item>Gay</item>
+        <item>Halloween</item>
+        <item>Horror</item>
+        <item>Humor</item>
+        <item>Industry/Manufacturing</item>
+        <item>Japan</item>
+        <item>Kickstarter</item>
+        <item>Legacy</item>
+        <item>Luck</item>
+        <item>Mafia</item>
+        <item>Math</item>
+        <item>Mature / Adult</item>
+        <item>Mecha</item>
+        <item>Medical</item>
+        <item>Medieval</item>
+        <item>Memory</item>
+        <item>Miniatures</item>
+        <item>Modern Warfare</item>
+        <item>Movie Theme</item>
+        <item>Movies / TV / Radio theme</item>
+        <item>Murder/Mystery</item>
+        <item>Mythology</item>
+        <item>Napoleonic</item>
+        <item>Nautical</item>
+        <item>Negotiation</item>
+        <item>Ninja\'s</item>
+        <item>Ninjas</item>
+        <item>Novel-based</item>
+        <item>Party Game</item>
+        <item>Pirates</item>
+        <item>Political</item>
+        <item>Post-Apocalyptic</item>
+        <item>Post-Napoleonic</item>
+        <item>Prehistoric</item>
+        <item>Print &amp; Play</item>
+        <item>Prison Escape</item>
+        <item>Puzzle</item>
+        <item>Queer</item>
+        <item>RPG</item>
+        <item>Racing</item>
+        <item>Real-time</item>
+        <item>Religious</item>
+        <item>Renaissance</item>
+        <item>Resource Management</item>
+        <item>Romance</item>
+        <item>Sci-Fi</item>
+        <item>Socialite</item>
+        <item>Solo / Solitaire</item>
+        <item>Space Exploration</item>
+        <item>Spies/Secret Agents</item>
+        <item>Sports</item>
+        <item>Strategy</item>
+        <item>Superhero</item>
+        <item>Tech</item>
+        <item>Territory Building</item>
+        <item>Theme Park</item>
+        <item>Trains</item>
+        <item>Transportation</item>
+        <item>Travel</item>
+        <item>Trivia</item>
+        <item>Video Game Theme</item>
+        <item>War</item>
+        <item>Wargame</item>
+        <item>Western</item>
+        <item>Word Game</item>
+        <item>World War I</item>
+        <item>World War II</item>
+        <item>World War III</item>
+        <item>Zombies</item>
+    </string-array>
+
+    <string-array name="favourite_mechanics">
+        <item>Mechanics</item>
+        <item>Acting</item>
+        <item>Action / Movement Programming</item>
+        <item>Action Point Allowance System</item>
+        <item>Action Selection</item>
+        <item>Area Control</item>
+        <item>Area Enclosure</item>
+        <item>Area Movement</item>
+        <item>Asymmetric</item>
+        <item>Auction</item>
+        <item>Betting</item>
+        <item>Bluffing</item>
+        <item>Building</item>
+        <item>Campaign</item>
+        <item>Card Drafting</item>
+        <item>Card Game</item>
+        <item>Card Placement</item>
+        <item>Chit-Pull System</item>
+        <item>Comodity Speculation</item>
+        <item>Confusion</item>
+        <item>Conversation</item>
+        <item>Cooperative</item>
+        <item>Cooperative Play</item>
+        <item>Crayon Rail System</item>
+        <item>Currency</item>
+        <item>D6 RPG</item>
+        <item>Deck Building</item>
+        <item>Deduction</item>
+        <item>Dexterity</item>
+        <item>Dice Building</item>
+        <item>Dice Movement</item>
+        <item>Dice Rolling</item>
+        <item>Drafting</item>
+        <item>Drawing</item>
+        <item>Drinking</item>
+        <item>Engine Building</item>
+        <item>Euro Game</item>
+        <item>Fighting</item>
+        <item>Flicking</item>
+        <item>Grid Movement</item>
+        <item>Hand Management</item>
+        <item>Hand-Eye Coordination</item>
+        <item>Hex and Counter</item>
+        <item>Hidden Movement</item>
+        <item>Hidden Traitor</item>
+        <item>Legacy</item>
+        <item>Line Drawing</item>
+        <item>Live action and Role Playing game (Larp)</item>
+        <item>Mancala</item>
+        <item>Memory</item>
+        <item>Modular Board</item>
+        <item>Paper and Pencil</item>
+        <item>Partnerships</item>
+        <item>Party Game</item>
+        <item>Pattern Building</item>
+        <item>Pattern Recognition</item>
+        <item>Pick-up and Deliver</item>
+        <item>Player Elimination</item>
+        <item>Player vs. Player</item>
+        <item>Point to Point Movement</item>
+        <item>Pool Building</item>
+        <item>Press Your Luck</item>
+        <item>Puzzle</item>
+        <item>Real Time</item>
+        <item>Resource Gathering</item>
+        <item>Rock-Paper-Scissors</item>
+        <item>Role Playing</item>
+        <item>Role Selection</item>
+        <item>Roll / Spin and Move</item>
+        <item>Roll and Write</item>
+        <item>Rondel</item>
+        <item>Route Building</item>
+        <item>Route/Network Building</item>
+        <item>Secret Unit Deployment</item>
+        <item>Set Collection</item>
+        <item>Simulation</item>
+        <item>Simultaneous Play</item>
+        <item>Simultaneous action selection</item>
+        <item>Skirmish</item>
+        <item>Social Deduction</item>
+        <item>Stock Holding</item>
+        <item>Storytelling</item>
+        <item>Tactical Movement</item>
+        <item>Tactics</item>
+        <item>Take That</item>
+        <item>Teams</item>
+        <item>Tile Placement</item>
+        <item>Time Track</item>
+        <item>Tower Defense</item>
+        <item>Trading</item>
+        <item>Trick-taking</item>
+        <item>Variable Phase Order</item>
+        <item>Variable Player Powers</item>
+        <item>Voting</item>
+        <item>Wargame</item>
+        <item>Worker Placement</item>
+    </string-array>
+
+    <string name="channel_name">Favourite Notifications</string>
+    <string name="channel_description">This channel is used to display favourite notifications</string>
+
+    <string name="modify_constraints">Modify Constraints</string>
+    <string name="constraint_mobile_data">Updates run even on mobile data.</string>
+    <string name="constraint_phone_charging">Updates run only when phone charging.</string>
+    <string name="constraint_low_battery">Updates run even on low battery.</string>
+    <string name="constraint_time_period">Time period between updates.</string>
+    <string name="updates_modified_successfully">Updates have been modified successfully</string>
+
+    <string name="favourite_name_empty">Favourite name is empty!</string>
+    <string name="favourite_exists">Favourite with this name already exists</string>
+
+</resources>

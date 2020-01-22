@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/MainWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/etSearchInput"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/bSearchByName"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/button_search_by_name"
+                    app:layout_constraintEnd_toEndOf="@+id/etSearchInput"
+                    app:layout_constraintStart_toStartOf="@+id/etSearchInput"
+                    app:layout_constraintTop_toBottomOf="@+id/etSearchInput" />
+
+                <Button
+                    android:id="@+id/bSearchByCompany"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/button_search_by_company"
+                    app:layout_constraintEnd_toEndOf="@+id/bSearchByName"
+                    app:layout_constraintStart_toStartOf="@+id/bSearchByName"
+                    app:layout_constraintTop_toBottomOf="@+id/bSearchByName" />
+
+                <Button
+                    android:id="@+id/bSearchByCreator"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/button_background"
+                    android:text="@string/button_search_by_creator"
+                    app:layout_constraintEnd_toEndOf="@+id/bSearchByCompany"
+                    app:layout_constraintStart_toStartOf="@+id/bSearchByCompany"
+                    app:layout_constraintTop_toBottomOf="@+id/bSearchByCompany" />
+
+            <Button
+                android:id="@+id/bSearchByPopularity"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/button_background"
+                android:text="@string/button_search_by_popularity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bSearchByCreator" />
+
+            <Button
+                android:id="@+id/bManageLists"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/button_background"
+                android:text="@string/button_manage_custom_lists"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bSearchByPopularity" />
+
+            <Button
+                android:id="@+id/bFavourite"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/button_background"
+                android:text="@string/button_favourite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bManageLists" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
